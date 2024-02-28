@@ -25,9 +25,9 @@ fn main() {
     match get_files_in_directory(folder_path) {
         Ok(files) => {
             for file in files {
-                if file.is_dir() {
+                if file.is_file() {
                     if let Ok(m) = file.metadata() {
-                        println!("{}", file.display());
+                        println!("{file:?}/{m:?}");
                     }
                 }
             }
