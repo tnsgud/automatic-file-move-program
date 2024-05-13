@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 from datetime import datetime
 
 from_target_path = ''
@@ -38,7 +39,8 @@ def find_file():
 def file_move():
   global to_target_path, target_list 
 
-  print(target_list)
+  for child in target_list:
+    shutil.move(f'{from_target_path}/{child}', f'{to_target_path}/{child}')
 
 
 load_config()
