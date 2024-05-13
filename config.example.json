@@ -1,5 +1,5 @@
 {
-  "from_target_path": "",
-  "to_target_path": "",
+  "from_target_path": "enter/your/from/path/here",
+  "to_target_path": "enter/your/to/path/here",
   "target_diff": 0
 }
