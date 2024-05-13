@@ -36,7 +36,7 @@ def find_file():
 
   return targets
 
-def file_move():
+def move_file():
   global to_target_path, target_list 
 
   for child in target_list:
@@ -46,5 +46,5 @@ def file_move():
 load_config()
 
 target_list = find_file()
-file_move()
+move_file()
 
